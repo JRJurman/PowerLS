@@ -9,10 +9,15 @@ Right now only does 3 different colors:
 - White for files with no extension
 
 ## Example Image
-![image](https://cloud.githubusercontent.com/assets/326557/6091455/c7b32bae-ae7a-11e4-9265-6656e78b3c3e.png)
+![image](https://cloud.githubusercontent.com/assets/326557/6094051/aafb8bde-aee6-11e4-98b7-14f399863232.png)
 
 ## Usage
 ```powershell
 import-module powerls
 powerls
+```
+
+## Alias to ls
+```powershell
+Set-Alias -Name ls -Value PowerLS -Option AllScope
 ```
