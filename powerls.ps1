@@ -13,7 +13,7 @@ else {
 }
 
 # get all the files and folders
-$childs = ls $redirect
+$childs = Get-ChildItem $redirect
 
 # get the longest string and get the length
 $lnStr = $childs | select-object Name | sort-object { "$_".length } -descending | select-object -first 1
