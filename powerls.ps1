@@ -17,7 +17,7 @@ $childs = Get-ChildItem $redirect
 
 # get the longest string and get the length
 $lnStr = $childs | select-object Name | sort-object { "$_".length } -descending | select-object -first 1
-$len = "$lnStr".length
+$len = $lnStr.name.length
 
 # keep track of how long our line is so far
 $count = 0
@@ -25,8 +25,8 @@ $count = 0
 # for every element, print the line
 foreach ($e in $childs) {
 
-  $newName = $e.name + (" "*($len - "$e".length+4))
-  $count += "$newName".length
+  $newName = $e.name + (" "*($len - $e.name.length+4))
+  $count += $newName.length
 
   # determine color we should be printing
   # Blue for folders, Green for files, and Gray for hidden files
