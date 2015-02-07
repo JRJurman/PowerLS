@@ -12,6 +12,10 @@ else {
   $redirect = "."
 }
 
+# get the console buffersize
+$buffer = Get-Host
+$bufferwidth = $buffer.ui.rawui.buffersize.width
+
 # get all the files and folders
 $childs = Get-ChildItem $redirect
 
@@ -22,10 +26,13 @@ $len = $lnStr.name.length
 # keep track of how long our line is so far
 $count = 0
 
+# extra space to give some breather space
+$breather = 4
+
 # for every element, print the line
 foreach ($e in $childs) {
 
-  $newName = $e.name + (" "*($len - $e.name.length+4))
+  $newName = $e.name + (" "*($len - $e.name.length+$breather))
   $count += $newName.length
 
   # determine color we should be printing
@@ -43,7 +50,7 @@ foreach ($e in $childs) {
     write-host $newName -nonewline -foregroundcolor white
   }
 
-  if ($count -ge 80) {
+  if ( $count -ge ($bufferwidth - ($len+$breather)) ) {
     write-host ""
     $count = 0
   }
