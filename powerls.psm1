@@ -1,8 +1,8 @@
-<# 
+<#
  .Synopsis
   Powershell unix-like ls
   Written by Jesse Jurman (JRJurman)
- 
+
  .Description
   A colorful ls
 
@@ -25,7 +25,7 @@ function PowerLS {
 
     # get the console buffersize
     $buffer = Get-Host
-    $bufferwidth = $buffer.ui.rawui.buffersize.widthR
+    $bufferwidth = $buffer.ui.rawui.buffersize.width
 
     # get all the files and folders
     $childs = Get-ChildItem $redirect
