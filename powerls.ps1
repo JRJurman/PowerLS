@@ -39,8 +39,8 @@ foreach ($e in $childs) {
   elseif ($newName -match "\.[^\.]*") { #normal files
     write-host $newName -nonewline -foregroundcolor green
   }
-  else { #others... something went wrong
-    write-host $newName -nonewline -foregroundcolor red
+  else { #others...
+    write-host $newName -nonewline -foregroundcolor white
   }
 
   if ($count -ge 80) {
