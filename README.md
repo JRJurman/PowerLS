@@ -10,3 +10,9 @@ Right now only does 3 different colors:
 
 ## Example Image
 ![image](https://cloud.githubusercontent.com/assets/326557/6091455/c7b32bae-ae7a-11e4-9265-6656e78b3c3e.png)
+
+## Usage
+```powershell
+import-module powerls
+powerls
+```

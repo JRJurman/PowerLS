@@ -1,0 +1,10 @@
+build: off
+
+install:
+    - ps: (new-object Net.WebClient).DownloadString("http://psget.net/GetPsGet.ps1") | iex
+    - ps: install-module pester
+    - ps: $env:PSModulePath += ";c:\projects\PowerLS\"
+    
+test_script:
+    - ps: (get-psprovider 'FileSystem').Home = "c:\User\"
+    - ps: .\test.ps1
