@@ -1,4 +1,4 @@
-# PowerLS
+# PowerLS ![build status](https://ci.appveyor.com/api/projects/status/github/JRJurman/PowerLS?svg=true&retina=true)
 Powershell ls that mimics the look of Unix-like ls
 
 ## Colors
