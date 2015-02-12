@@ -7,7 +7,7 @@ If you have [PSGet](http://psget.net/) you can easily install like so:
 install-module powerls
 ```
 
-If you want to install from a copy of this repo, follow the directions under __Usuage__
+If you want to install from a copy of this repo, follow the directions under [usage](#usage)
 
 ## Colors
 Right now only does 3 different colors:
