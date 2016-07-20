@@ -48,18 +48,25 @@ function PowerLS {
 
       # determine color we should be printing
       # Blue for folders, Green for files, and Gray for hidden files
-      if (Test-Path ($redirect + "\" + $e) -pathtype container) { #folders
-        write-host $newName -nonewline -foregroundcolor blue
+      if (($newName -match "^\..*$") -and (Test-Path ($redirect + "\" + $e) -pathtype container)) { #hidden folders
+        $newName = $e.name + "\" + (" "*($len - $e.name.length+$breather - 1))
+        write-host $newName -nonewline -foregroundcolor darkcyan
+      }
+      elseif (Test-Path ($redirect + "\" + $e) -pathtype container) { #normal folders
+        $newName = $e.name + "\" + (" "*($len - $e.name.length+$breather - 1))
+        write-host $newName -nonewline -foregroundcolor cyan
       }
       elseif ($newName -match "^\..*$") { #hidden files
         write-host $newName -nonewline -foregroundcolor darkgray
       }
       elseif ($newName -match "\.[^\.]*") { #normal files
-        write-host $newName -nonewline -foregroundcolor green
+        write-host $newName -nonewline -foregroundcolor darkyellow
       }
       else { #others...
-        write-host $newName -nonewline -foregroundcolor white
+        write-host $newName -nonewline -foregroundcolor gray
       }
+      # Black, DarkBlue, DarkGreen, DarkCyan, DarkRed, DarkMagenta, DarkYellow, Gray, DarkGray, Blue, Green, Cyan, Red,
+      # Magenta, Yellow, White"
 
       if ( $count -ge ($bufferwidth - ($len+$breather)) ) {
         write-host ""
