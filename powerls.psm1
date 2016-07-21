@@ -65,8 +65,6 @@ function PowerLS {
       else { #others...
         write-host $newName -nonewline -foregroundcolor gray
       }
-      # Black, DarkBlue, DarkGreen, DarkCyan, DarkRed, DarkMagenta, DarkYellow, Gray, DarkGray, Blue, Green, Cyan, Red,
-      # Magenta, Yellow, White"
 
       if ( $count -ge ($bufferwidth - ($len+$breather)) ) {
         write-host ""
