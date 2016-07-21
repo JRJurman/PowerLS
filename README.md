@@ -10,14 +10,18 @@ install-module powerls
 If you want to install from a copy of this repo, follow the directions under [usage](#usage)
 
 ## Colors
-Right now only does 3 different colors:
-- Blue for Directories
-- Gray for Hidden files
-- Green for Files
-- White for files with no extension
+Right now only does 5 different colors:
+- DarkCyan for Hidden Directories
+- Cyan for Directories
+- DarkGray for Hidden files
+- DarkYellow for Files
+- Gary for Files with no extension
 
-## Example Image
-![image](https://cloud.githubusercontent.com/assets/326557/6094051/aafb8bde-aee6-11e4-98b7-14f399863232.png)
+## Example Images
+![powerls-on-powershell](https://cloud.githubusercontent.com/assets/140910/17007117/b05917f2-4eab-11e6-98b9-3aa0ed94c15c.png)
+![powerls-on-powershell-ise](https://cloud.githubusercontent.com/assets/140910/17007271/de449a50-4eac-11e6-8201-3e8fa76a160e.png)
+
+
 
 ## Usage
 From the root directory, run:
