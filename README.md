@@ -17,7 +17,10 @@ Right now only does 3 different colors:
 - White for files with no extension
 
 ## Example Image
-![image](https://cloud.githubusercontent.com/assets/326557/6094051/aafb8bde-aee6-11e4-98b7-14f399863232.png)
+![powerls-on-powershell](https://cloud.githubusercontent.com/assets/140910/17007117/b05917f2-4eab-11e6-98b9-3aa0ed94c15c.png)
+![powerls-on-powershell-ise](https://cloud.githubusercontent.com/assets/140910/17007271/de449a50-4eac-11e6-8201-3e8fa76a160e.png)
+
+
 
 ## Usage
 From the root directory, run:
