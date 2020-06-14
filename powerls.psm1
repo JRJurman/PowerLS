@@ -1,6 +1,6 @@
 <#
  .Synopsis
-  Powershell unix-like ls
+  unix-like ls for Powershell
   Written by Jesse Jurman (JRJurman)
 
  .Description
