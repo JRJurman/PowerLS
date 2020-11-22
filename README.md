@@ -1,6 +1,12 @@
 # PowerLS ![build status](https://ci.appveyor.com/api/projects/status/github/JRJurman/PowerLS?svg=true&retina=true)
 Powershell ls that mimics the look of Unix-like ls
 
+-----
+
+**Note this project is no longer maintained, instead you should check out the actively maintained [PowerColorLS](https://github.com/gardebring/PowerColorLS)**
+
+-----
+
 ## Installing
 If you have [PSGet](http://psget.net/) you can easily install like so:
 ```powershell
